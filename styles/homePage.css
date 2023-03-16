@@ -1,0 +1,38 @@
+.badges{
+    font-size: 0.75rem;
+    top: 0px;
+    right: -5px;
+    padding: 0px 7px;
+    background-color: red;
+}
+
+.small-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 0.5rem;
+}
+
+.carousel-caption{
+    right: initial !important;
+    left: initial !important;
+    top: 40%;
+}
+
+.c-1{
+    font-family: 'Allura', cursive;
+    font-size: 4rem;
+}
+
+.c-2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 6rem;
+    line-height: 4rem;
+}
+
+.c-3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-top: 2.5rem;
+}
