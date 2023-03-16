@@ -16,6 +16,17 @@ header nav.bottom{
     font-size: 1.25rem;
 }
 
+.dropdown-menu{
+    border-bottom-left-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.313rem !important;
+}
+
+.dropdown-menu li.fw-bold{
+    font-size: 1.563rem !important;
+}
+
 .dropdown-toggle::after{
     content: initial !important;
 }
