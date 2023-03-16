@@ -16,6 +16,10 @@ header nav.bottom{
     font-size: 1.25rem;
 }
 
+.dropdown-toggle::after{
+    content: initial !important;
+}
+
 header nav.bottom .active{
     color: #79BAFC;
 }
