@@ -23,6 +23,11 @@ header nav.bottom{
     font-size: 1.313rem !important;
 }
 
+.dropdown-menu[data-bs-popper] {
+    top: 150% !important;
+    left: -50% !important;
+}
+
 .dropdown-menu li.fw-bold{
     font-size: 1.563rem !important;
 }
