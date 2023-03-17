@@ -12,14 +12,32 @@
 .main-txt {
     font-size: 36px;
     font-weight: bold;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
+
 
 .sub-txt {
     font-size: 16px;
     /* margin-top: 1rem; */
 }
 
-p {
-    margin: 0;
+/*Privecy*/
+
+ol {
+    /* padding: 0.8rem; */
+    padding-left: 0.8rem;
+}
+
+/*account*/
+.sub-txt1 {
+    font-size: 22px;
+    color: black !important;
+    margin-top: 1.5rem
+}
+
+/* contact us*/
+.main-txt1 {
+    font-size: 36px;
+    font-weight: medium;
+    /* margin-top: 1rem; */
 }
