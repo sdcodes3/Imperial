@@ -117,3 +117,9 @@ p {
     background-color: #79BAFC;
     position: relative;
 }
+
+.swiper-slide-active {
+    width: 246.3333px;
+    margin-right: 10px;
+
+}
