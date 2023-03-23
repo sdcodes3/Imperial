@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- Google Fonts Allura -->
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-<body>
+<body style="overflow-x: hidden;">
     <header class="">
         <nav class="navbar navbar-expand-lg text-white top bg-dark">
             <div class="container-fluid flex-column gap-2 flex-md-row justify-content-center justify-content-md-between">
@@ -50,7 +50,7 @@
                             </a>
                             <ul class="dropdown-menu border-0">
                                 <li><a class="fw-bold dropdown-item" href="#">View all</a></li>
-                                <li><a class="dropdown-item py-0" href="#">Action</a></li>
+                                <li><a class="dropdown-item py-0 pt-2" href="#">Action</a></li>
                                 <li><a class="dropdown-item py-0" href="#">Another action</a></li>
                                 <li><a class="dropdown-item py-0 pb-4" href="#">Something else here</a></li>
                             </ul>
@@ -78,9 +78,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="d-flex gap-4">
-                    <img src="img/profile-icon.svg" alt="">
-                    <img src="img/search-icon.svg" alt="">
+                <div class="d-flex gap-4 nav2-icons">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1" onclick="profile()" style="outline: none; border: none;">
+                        <img src="img/profile-icon.svg" alt="">
+                    </button>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="outline: none; border: none;">
+                        <img src="img/search-icon.svg" alt="">
+                    </button>
                     <div class="d-flex align-items-center">
                         <div class="position-relative">
                             <img src="img/icon.png" alt="" class="img-fluid">
@@ -97,15 +101,114 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <main class="overflow-hidden position-relative">
+        <!-- Fixed Search-->
+        <div class="collapse display-block bg-white" id="collapseExample" style="z-index: 20;">
+            <!--button-->
+            <div></div>
+            <div class="container-fluid p-5 bg-white position-absolute" style="z-index: 10;">
+                <div>
+                    <input type="email" class="form-control in-box" placeholder="Start Typing">
+                </div>
+                <div class="p-4">
+                    <p class="heading mt-3">Need a little Inspiration?</p>
+                    <div class="row gap-3 gy-3 mt-2">
+                        <button type="button" class="btn mx-auto col-md-2 bt-w">EYELASHES</button>
+                        <button type="button" class="btn mx-auto col-md-2 bt-w">GLUES & LIQUIDS</button>
+                        <button type="button" class="btn mx-auto col-md-2 bt-w">TWEEZERS</button>
+                        <button type="button" class="btn mx-auto col-md-2 bt-w">BRUSHES</button>
+                        <button type="button" class="btn mx-auto col-md-2 bt-w">ASSESORIES</button>
+                        <button type="button" class="btn mx-auto col-md-2 bt-w">BEST SELLERS</button>
+                        <button type="button" class="btn mx-auto col-md-2 bt-w">NEW ARRIVALS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fixed Profile -->
+        <div class="collapse display-block" id="collapseExample1" style="z-index: 20; background-color: #E7F4FF;">
+            <!--button-->
+            <div class="col-md-4 h-100 d-flex flex-column justify-content-evenly align-items-center p-3 position-absolute" style="z-index: 10; right: 0; background-color: #E7F4FF;">
+                <div class="d-flex justify-content-between w-100">
+                    <p class="log">LOGIN</p>
+                    <p class="create" onclick="createAccount()" style="cursor: pointer;"><span style="color: black !important;">CREATE ACCOUNT</span></p>
+                </div>
+                <div class="col-12 col-md-8 mt-5">
+                    <input type="email" class="form-control in1" placeholder="Email">
+                    <input type="password" class="form-control mt-4 in1" placeholder="Password">
+                    <p class="forgot mt-4"><span style="border-bottom: 1px solid black;">Forgot Password</span></p>
+                </div>
+                <button type="button" class="btn btn-dark mt-3 mx-auto col-md-8">Sign in</button>
+                <div class="col-12  mt-5 d-flex flex-column">
+                    <div class="d-flex">
+                        <div class="col-md-2 d-flex justify-content-center">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="frtxt">By clicking “Continue with Facebook”, you are acknowledging that you have received and read Privacy Policy, our Ad & Cookie Policy and our Terms of Use.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-md-2 d-flex justify-content-center">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="frtxt">Yes! By submitting your e-mail address you agree to receive marketing e-mail communications from Jo Malone London Online. Privacy Policy</p>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-cont mt-5 col-12 col-md-11"><i class="fa fa-facebook-official mx-2" aria-hidden="true"></i>
+                    Continue with Facebook
+                </button>
+            </div>
+        </div>
+
+        <div class="collapse d-none" id="collapseExample2" style="z-index: 20; background-color: #E7F4FF;">
+            <!--button-->
+            <div class="row col-md-5 d-flex flex-column align-items-center p-4" style="background-color: #E7F4FF;">
+                <div class="d-flex justify-content-between">
+                    <p class="log">LOGIN</p>
+                    <p class="create"><span style="border-bottom: 1px solid #FF0000;">CREATE ACCOUNT</span></p>
+                </div>
+                <div class="col-12 col-md-8 mt-5">
+                    <input type="text" class="form-control in1" placeholder="First Name">
+                    <input type="text" class="form-control mt-4 in1" placeholder="Last Name">
+                    <input type="email" class="form-control in1 mt-4" placeholder="Email">
+                    <input type="password" class="form-control mt-4 in1" placeholder="Password">
+                </div>
+                <button type="button" class="btn btn-dark mt-5 mx-auto col-md-8">Reset Password</button>
+                <div class="col-12  mt-5 d-flex flex-column">
+                    <div class="d-flex  gap-2">
+                        <div class="col-md-2 d-flex justify-content-center">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="frtxt">By clicking “Continue with Facebook”, you are acknowledging that you have received and read Privacy Policy, our Ad & Cookie Policy and our Terms of Use. </p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="col-md-2 d-flex justify-content-center">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="frtxt">Yes! By submitting your e-mail address you agree to receive marketing e-mail communications from Jo Malone London Online. Privacy Policy</p>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary mt-5 col-12 col-md-11 "><i class="fa fa-facebook-official mx-2" aria-hidden="true"></i>
+                    Continue with Facebook
+                </button>
+            </div>
+        </div>
+        
+        <div id="carouselExampleIndicators" class="carousel slide" style="overflow-y: none;" data-bs-ride="true">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="1000">
                     <img src="img/Main Image.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-flex flex-column ps-4 w-75 text-start">
                         <span class="c-1">Love your Eyes</span>
@@ -113,15 +216,37 @@
                         <span class="c-3" style="width: 80%;">Lpsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble it to make a type specimen book. It has</span>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="img/Main Image.png" class="d-block w-100" alt="...">
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="img/Main Image1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-flex flex-column ps-4 w-75 text-start">
+                        <span class="c-1">Love your Eyes</span>
+                        <span class="c-2">Perfect Eyelashes</span>
+                        <span class="c-3" style="width: 80%;">Lpsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble it to make a type specimen book. It has</span>
+                    </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="1000">
                     <img src="img/Main Image.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-flex flex-column ps-4 w-75 text-start">
+                        <span class="c-1">Love your Eyes</span>
+                        <span class="c-2">Perfect Eyelashes</span>
+                        <span class="c-3" style="width: 80%;">Lpsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble it to make a type specimen book. It has</span>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function createAccount(){
+            document.getElementById("collapseExample1").classList.toggle("d-none")
+            document.getElementById("collapseExample2").classList.toggle("d-none")
+        }
+
+        function profile(){
+            let a = document.getElementById("collapseExample1");
+            a.classList.remove("d-none")
+            document.getElementById("collapseExample2").classList.remove("d-none", "show")
+        }
+    </script>
 </body>
 </html>

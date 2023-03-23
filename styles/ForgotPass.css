@@ -1,0 +1,34 @@
+.reset-pass {
+    font-size: 3rem;
+    font-family: 'Marcellus', serif;
+}
+
+.subtxt {
+    font-size: 1.375rem;
+    font-family: 'Marcellus', serif;
+}
+
+.link {
+    color: black !important;
+    text-decoration: none;
+    font-family: 'Marcellus', serif;
+    font-size: 1.25rem;
+}
+
+.mail {
+    margin-bottom: 0px;
+    font-family: 'Marcellus', serif;
+    font-size: 1.5rem;
+}
+
+.reset-btn{
+    font-family: 'Marcellus', serif !important;
+    font-size: 2rem !important;
+}
+
+/* Reset Pass */
+.in {
+    font-family: 'Marcellus', serif !important;
+    font-size: 1rem;
+    color: black !important;
+}

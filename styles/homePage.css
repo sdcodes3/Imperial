@@ -1,17 +1,3 @@
-.badges{
-    font-size: 0.75rem;
-    top: 0px;
-    right: -5px;
-    padding: 0px 7px;
-    background-color: red;
-}
-
-.small-text{
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 0.5rem;
-}
-
 .carousel-caption{
     right: initial !important;
     left: initial !important;

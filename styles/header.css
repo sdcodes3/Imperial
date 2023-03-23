@@ -44,3 +44,74 @@ header nav.bottom .active{
     padding-left: 2rem !important;
     padding-right: 2rem !important;
 }
+
+.badges{
+    font-size: 0.75rem;
+    top: 0px;
+    right: -5px;
+    padding: 0px 7px;
+    background-color: red;
+}
+
+.small-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 0.5rem;
+}
+
+.nav2-icons img:hover{
+    cursor: pointer;
+}
+
+.in-box {
+    background-color: #E3EDF8 !important;
+    border: 1px dashed black !important;
+    border-radius: 0px !important;
+    font-family: 'Marcellus', serif;
+    font-size: 2rem !important;
+}
+
+.heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.bt-w {
+    border: 1px solid black !important;
+    border-radius: 0px !important;
+}
+
+.log {
+    font-family: 'Marcellus', serif;
+    font-size: 1.75rem !important;
+    color: #F80000 !important;
+}
+
+.create {
+    font-family: 'Marcellus', serif;
+    font-size: 1.75rem !important;
+    color: #F80000 !important;
+}
+
+.in1 {
+    font-family: 'Marcellus', serif;
+    color: black !important;
+    border: 1px solid black !important;
+    border-radius: 0px !important;
+}
+
+.frtxt {
+    font-family: 'Marcellus', serif;
+    font-size: 1.25rem !important;
+}
+
+.forgot {
+    font-family: 'Marcellus', serif;
+    font-size: 1rem !important;
+}
+
+.btn-cont{
+    font-family: 'Marcellus', serif;
+    font-size: 1.125rem !important;
+}
