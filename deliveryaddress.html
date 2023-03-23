@@ -21,11 +21,11 @@
 
     <body>
 
-        <div class="container">
+        <div class="p-3 container-fluid">
             <div class="row col-12">
-                <div class="col-md-7" style="border-right: 1px solid black;">
+                <div class="col-7" style="border-right: 1px solid #D9D9D9;">
                     <h5>DELIVERY ADDRESS</h5>
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-3 flex-column flex-md-row">
                         <div class="form-check">
                             <input class="form-check-input" type="radio">
                             <label class="form-check-label" for="flexRadioDefault1">
@@ -37,105 +37,146 @@
                                 Add New Address </label>
                         </div>
                     </div>
-                    <div class="mt-4">
-                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                    <div class="col-md-4 mt-4">
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example"
+                            style="border: 2px solid black;">
+                            <option selected>Select the Title</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="mt-4 col-md-11">
+                        <input type="email" class="form-control">
                     </div>
                     <!-- <div class=" gy-3 mt-2"> -->
                     <div class="d-flex flex-column">
                         <div class="d-flex gap-5 mt-4">
+
                             <div class="col-md-4">
-                                <input type="password" class="form-control" id="inputPassword2"
-                                    placeholder="First name*">
+                                <input type="password" class="form-control" placeholder="First name*">
                             </div>
                             <div class="col-md-4">
                                 <input type="password" class="form-control" placeholder="Last name*">
                             </div>
                         </div>
                         <div class="col-md-9 mt-3">
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email*">
+                            <input type="email" class="form-control" placeholder="Email*">
                         </div>
                         <div class="col-md-9 mt-3">
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="Mobile No*">
+                            <input type="email" class="form-control" placeholder="Mobile No*">
                         </div>
                         <div class="d-flex gap-5 mt-4">
                             <div class="col-md-4">
-                                <input type="password" class="form-control" id="inputPassword2"
-                                    placeholder="First name*">
+                                <input type="password" class="form-control" placeholder="Address Line-1">
                             </div>
                             <div class="col-md-4">
-                                <input type="password" class="form-control" placeholder="Last name*">
+                                <input type="password" class="form-control" placeholder="Address Line-2">
                             </div>
                         </div>
                         <div class="d-flex gap-5 mt-4">
                             <div class="col-md-4">
-                                <input type="password" class="form-control" id="inputPassword2"
-                                    placeholder="First name*">
+                                <input type="password" class="form-control" placeholder="City">
                             </div>
                             <div class="col-md-4">
-                                <input type="password" class="form-control" placeholder="Last name*">
+                                <input type="password" class="form-control" placeholder="Country">
                             </div>
                         </div>
                         <div class="col-md-4 mt-4">
-                            <input type="password" class="form-control" placeholder="Last name*">
+                            <input type="password" class="form-control" placeholder="Post Code">
                         </div>
+                    </div>
+                    <div class="col-md-11 d-flex justify-content-end" style="margin-top: 6rem;">
+                        <button class="btn btn-dark"
+                            style="font-size: 1.5rem;padding:3px 50px 3px 50px;    font-family: 'Marcellus', serif;border-radius:0px !important">Check
+                            Out</button>
                     </div>
                 </div>
                 <!-- </div> -->
-                <div class="col-md-5">
-                    <h3>SHOPPING BAG ( 2 Items) </h3>
-                    <div class="d-flex align-items-center gap-3">
-                        <img src="img/Eye.png" alt="" width="170px" height="167px">
-                        <div>
-                            <h4>Volume Eyelashes</h4>
-                            <p>Your eyes will look gorgeous</p>
-                            <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                <button type="button" class="btn btn-outline-dark ">-</button>
-                                <button type="button" class="btn btn-outline-dark">1</button>
-                                <button type="button" class="btn btn-outline-dark">+</button>
+                <div class="col-5 p-0 gy-2">
+                    <div class="p-2">
+                        <div class="row col-12 gy-3">
+                            <div class="col-md-5 d-flex justify-content-center">
+                                <img src="img/Eye.png" alt="" style="width:170px;height:167px">
+                            </div>
+                            <div class="col-md-7 d-flex flex-column justify-content-center">
+                                <div class="d-flex flex-column align-items-sm-center align-items-md-start">
+                                    <h4 class="fw m-0">Rainbow Tweezer</h4>
+                                    <p>High quality product</p>
+                                </div>
+                                <div class="d-flex justify-content-between ">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn ">-</button>
+                                        <button type="button" class="btn ">1</button>
+                                        <button type="button" class="btn ">+</button>
+                                    </div>
+                                    <div>
+                                        <p>£
+                                            15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 d-flex justify-content-center">
+                                <img src="img/Eye.png" alt="" style="width:170px;height:167px">
+                            </div>
+                            <div class="col-md-7 d-flex flex-column justify-content-center">
+                                <div class="d-flex flex-column align-items-sm-center align-items-md-start">
+                                    <h4 class="fw m-0">Rainbow Tweezer</h4>
+                                    <p>High quality product</p>
+                                </div>
+                                <div class="d-flex justify-content-between ">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn ">-</button>
+                                        <button type="button" class="btn ">1</button>
+                                        <button type="button" class="btn ">+</button>
+                                    </div>
+                                    <div>
+                                        <p>£
+                                            15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <hr>
+                        <div class="p-1">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="fw">Item Total</h6>
+                                <h6 class="fw">£
+                                    150.00</h6>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h6 class="fw">Next Day Delivery</h6>
+                                <h6 class="fw">£
+                                    150.00</h6>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h6 class="fw">Total</h6>
+                                <h6 class="fw">£
+                                    150.00</h6>
+                            </div>
+
+                            <div style="border: 1px solid #D9D9D9;padding:10px 10px 36px;font-size:1.05rem;"
+                                class="mt-3">
+                                <p>NEED HELP?</p>
+                                <p>If you need help Contact us, or call Customer</p>
+                                <p>Service on 0737825389</p>
+                            </div>
+                            <div style="border: 1px solid #D9D9D9;padding:10px 10px 30px;font-size:1.05rem;"
+                                class="mt-4">
+                                <p>OUR GUARANTEE</p>
+                                <p>If for any reason you are not completely satisfied with your
+                                    Jo Malone London Online purchase, simply return the unused
+                                    portion and we will be happy to process an exchange or remit
+                                    your account for the full amount of the purchase.
+                                    <a style="color:black !important" href="Our Return Policy">Our Return Policy</a>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center gap-3 mt-4">
-                        <img src="img/Eye.png" alt="" width="170px" height="167px">
-                        <div>
-                            <h4>Volume Eyelashes</h4>
-                            <p>Your eyes will look gorgeous</p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div>
-                        <div class="d-flex justify-content-between">
-                            <h5>Item Total</h5>
-                            <h5>£
-                                150.00</h5>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <h5>Next Day Delivery</h5>
-                            <h5>£
-                                150.00</h5>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <h5>Total</h5>
-                            <h5>£
-                                150.00</h5>
-                        </div>
-                    </div>
-                    <div style="border: 1px solid black;padding:1rem">
-                        <p>NEED HELP?</p>
-                        <p>If you need help Contact us, or call Customer</p>
-                        <p>Service on 0737825389</p>
-                    </div>
-                    <div style="border: 1px solid black;padding:1rem" class="mt-4">
-                        <p>OUR GUARANTEE</p>
-                        <p>If for any reason you are not completely satisfied with your
-                            Jo Malone London Online purchase, simply return the unused
-                            portion and we will be happy to process an exchange or remit
-                            your account for the full amount of the purchase.
-                            Our Return Policy</p>
-                    </div>
-                </div>
 
+                </div>
             </div>
             <!--Bootstrap-->
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
