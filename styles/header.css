@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a{
+    cursor: pointer;
+}
+
 header nav.top{
     font-family: 'Inria Serif', serif;
     font-weight: bold;
@@ -115,3 +119,21 @@ header nav.bottom .active{
     font-family: 'Marcellus', serif;
     font-size: 1.125rem !important;
 }
+
+/* Slider */
+
+.swiperNav .card-title,
+.swiperNav .price{
+    font-family: 'Marcellus', serif;
+    font-size: 0.938rem;
+}
+
+.swiperNav .price{
+    font-weight: bold;
+}
+
+.swiperNav .swiper-slide:hover{
+    border: 4px solid black;
+}
+
+/*  */

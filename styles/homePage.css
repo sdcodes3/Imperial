@@ -23,6 +23,38 @@
     padding-top: 2.5rem;
 }
 
+/* Images 5 */
+.bottom-right {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: max-content;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    border-bottom: 3px solid white;
+}
+
+/* New Arrivals */
+
+.newArrival .right{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+.newArrival .right .title{
+    color: #053737;
+}
+
+.newArrival .right a{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/*  */
+
 .page-titles{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -46,23 +78,25 @@
     right: var(--swiper-navigation-sides-offset,25px) !important;
 }
 
-.swiper .card-title{
+.swiperMain .card-title{
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     font-weight: 600;
 }
 
-.swiper .card-text{
+.swiperMain .card-text{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
 }
 
-.swiper .price, .swiper a{
+.swiperMain .price, .swiperMain a{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-.swiper-slide-next > div {
+.swiperMain .swiper-slide-next > div {
     border: 4px solid black;
 }
+
+/*  */

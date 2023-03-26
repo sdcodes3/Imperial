@@ -21,3 +21,17 @@ function profile(){
     }
     type = "none"
 }
+
+const swiper1 = new Swiper('.swiperNav', {
+    // Optional parameters
+    loop: true,
+  
+    slidesPerView: 5,
+    spaceBetween: 30,
+  
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
