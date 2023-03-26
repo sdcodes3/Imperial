@@ -21,8 +21,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- Google Fonts Allura -->
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 <body style="overflow-x: hidden;">
     <header class="">
+        <!-- First Nav -->
         <nav class="navbar navbar-expand-lg text-white top bg-dark">
             <div class="container-fluid flex-column gap-2 flex-md-row justify-content-center justify-content-md-between">
                 <div>
@@ -37,6 +41,7 @@
                 </div>
             </div>
         </nav>
+        <!-- Second Nav -->
         <nav class="navbar navbar-expand-lg bg-white bottom py-0">
             <div class="container-fluid">
                 <a class="navbar-brand p-0 m-0" href="#">
@@ -78,14 +83,18 @@
                         </li>
                     </ul>
                 </div>
-                <div class="d-flex gap-4 nav2-icons">
-                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1" onclick="profile()" style="outline: none; border: none;">
-                        <img src="img/profile-icon.svg" alt="">
-                    </button>
-                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="outline: none; border: none;">
-                        <img src="img/search-icon.svg" alt="">
-                    </button>
-                    <div class="d-flex align-items-center">
+                <div class="d-flex nav2-icons">
+                    <div>
+                        <button class="btn" type="button" onclick="profile()" style="outline: none; border: none;">
+                            <img src="img/profile-icon.svg" alt="">
+                        </button>
+                    </div>
+                    <div>
+                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="outline: none; border: none;">
+                            <img src="img/search-icon.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="d-flex align-items-center ps-2">
                         <div class="position-relative">
                             <img src="img/icon.png" alt="" class="img-fluid">
                             <div class="badges text-white position-absolute rounded-circle">2</div>
@@ -102,10 +111,8 @@
         </nav>
     </header>
     <main class="overflow-hidden position-relative">
-        <!-- Fixed Search-->
-        <div class="collapse display-block bg-white" id="collapseExample" style="z-index: 20;">
-            <!--button-->
-            <div></div>
+        <!-- Search-->
+        <div class="collapse bg-white" id="collapseExample" style="z-index: 20;">
             <div class="container-fluid p-5 bg-white position-absolute" style="z-index: 10;">
                 <div>
                     <input type="email" class="form-control in-box" placeholder="Start Typing">
@@ -125,18 +132,20 @@
             </div>
         </div>
         
-        <!-- Fixed Profile -->
-        <div class="collapse display-block" id="collapseExample1" style="z-index: 20; background-color: #E7F4FF;">
-            <!--button-->
-            <div class="col-md-4 h-100 d-flex flex-column justify-content-evenly align-items-center p-3 position-absolute" style="z-index: 10; right: 0; background-color: #E7F4FF;">
-                <div class="d-flex justify-content-between w-100">
+        <!-- Profile 1 Login -->
+        <button class="btn d-none" type="button" id="profile" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1" style="outline: none; border: none;">
+            <img src="img/profile-icon.svg" alt="">
+        </button>
+        <div class="collapse" id="collapseExample1" style="z-index: 20; background-color: #E7F4FF;">
+            <div class="row col-md-4 h-100 d-flex flex-column justify-content-evenly align-items-center p-4 position-absolute" style="z-index: 10; right: 0; background-color: #E7F4FF;">
+                <div class="d-flex justify-content-between">
                     <p class="log">LOGIN</p>
                     <p class="create" onclick="createAccount()" style="cursor: pointer;"><span style="color: black !important;">CREATE ACCOUNT</span></p>
                 </div>
                 <div class="col-12 col-md-8 mt-5">
                     <input type="email" class="form-control in1" placeholder="Email">
                     <input type="password" class="form-control mt-4 in1" placeholder="Password">
-                    <p class="forgot mt-4"><span style="border-bottom: 1px solid black;">Forgot Password</span></p>
+                    <a href="ForgotPass.html" class="forgot mt-4 text-decoration-none text-dark"><span style="border-bottom: 1px solid black;">Forgot Password</span></a>
                 </div>
                 <button type="button" class="btn btn-dark mt-3 mx-auto col-md-8">Sign in</button>
                 <div class="col-12  mt-5 d-flex flex-column">
@@ -163,11 +172,14 @@
             </div>
         </div>
 
-        <div class="collapse d-none" id="collapseExample2" style="z-index: 20; background-color: #E7F4FF;">
-            <!--button-->
-            <div class="row col-md-5 d-flex flex-column align-items-center p-4" style="background-color: #E7F4FF;">
+        <!-- Profile 2 Create Account -->
+        <button class="btn d-none" id="createAccount" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2" style="outline: none; border: none;">
+            <img src="img/profile-icon.svg" alt="">
+        </button>
+        <div class="collapse" id="collapseExample2" style="z-index: 20; background-color: #E7F4FF;">
+            <div class="row col-md-4 d-flex flex-column align-items-center p-4 position-absolute" style="z-index: 10; right: 0; background-color: #E7F4FF;">
                 <div class="d-flex justify-content-between">
-                    <p class="log">LOGIN</p>
+                    <p class="log text-dark" style="cursor: pointer;" onclick="login()">LOGIN</p>
                     <p class="create"><span style="border-bottom: 1px solid #FF0000;">CREATE ACCOUNT</span></p>
                 </div>
                 <div class="col-12 col-md-8 mt-5">
@@ -176,7 +188,7 @@
                     <input type="email" class="form-control in1 mt-4" placeholder="Email">
                     <input type="password" class="form-control mt-4 in1" placeholder="Password">
                 </div>
-                <button type="button" class="btn btn-dark mt-5 mx-auto col-md-8">Reset Password</button>
+                <a href="ResetPass.html" class="btn btn-dark mt-5 mx-auto col-md-8 text-decoration-none">Reset Password</a>
                 <div class="col-12  mt-5 d-flex flex-column">
                     <div class="d-flex  gap-2">
                         <div class="col-md-2 d-flex justify-content-center">
@@ -201,6 +213,7 @@
             </div>
         </div>
         
+        <!-- Main Back Carousel -->
         <div id="carouselExampleIndicators" class="carousel slide" style="overflow-y: none;" data-bs-ride="true">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -234,19 +247,160 @@
                 </div>
             </div>
         </div>
+
+        <div class="page-titles">
+            Our Products
+        </div>
+        <!-- Slider -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column align-items-center py-4">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="img/product1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="content d-flex flex-column align-items-center gap-2 pt-3">
+                            <div class="card-title">Classic Eyelashes</div>
+                            <div class="card-text">You will have natural looking lashes</div>
+                            <div class="price">$150.00</div>
+                            <div>
+                                <a href="" class="btn btn-dark px-5 rounded-0">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column align-items-center py-4">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="img/product1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="content d-flex flex-column align-items-center gap-2 pt-3">
+                            <div class="card-title">Classic Eyelashes</div>
+                            <div class="card-text">You will have natural looking lashes</div>
+                            <div class="price">$150.00</div>
+                            <div>
+                                <a href="" class="btn btn-dark px-5 rounded-0">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column align-items-center py-4">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="img/product1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="content d-flex flex-column align-items-center gap-2 pt-3">
+                            <div class="card-title">Classic Eyelashes</div>
+                            <div class="card-text">You will have natural looking lashes</div>
+                            <div class="price">$150.00</div>
+                            <div>
+                                <a href="" class="btn btn-dark px-5 rounded-0">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column align-items-center py-4">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="img/product1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="content d-flex flex-column align-items-center gap-2 pt-3">
+                            <div class="card-title">Classic Eyelashes</div>
+                            <div class="card-text">You will have natural looking lashes</div>
+                            <div class="price">$150.00</div>
+                            <div>
+                                <a href="" class="btn btn-dark px-5 rounded-0">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column align-items-center py-4">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="img/product1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="content d-flex flex-column align-items-center gap-2 pt-3">
+                            <div class="card-title">Classic Eyelashes</div>
+                            <div class="card-text">You will have natural looking lashes</div>
+                            <div class="price">$150.00</div>
+                            <div>
+                                <a href="" class="btn btn-dark px-5 rounded-0">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column align-items-center py-4">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="img/product1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="content d-flex flex-column align-items-center gap-2 pt-3">
+                            <div class="card-title">Classic Eyelashes</div>
+                            <div class="card-text">You will have natural looking lashes</div>
+                            <div class="price">$150.00</div>
+                            <div>
+                                <a href="" class="btn btn-dark px-5 rounded-0">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column align-items-center py-4">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="img/product1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="content d-flex flex-column align-items-center gap-2 pt-3">
+                            <div class="card-title">Classic Eyelashes</div>
+                            <div class="card-text">You will have natural looking lashes</div>
+                            <div class="price">$150.00</div>
+                            <div>
+                                <a href="" class="btn btn-dark px-5 rounded-0">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column align-items-center py-4">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="img/product1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="content d-flex flex-column align-items-center gap-2 pt-3">
+                            <div class="card-title">Classic Eyelashes</div>
+                            <div class="card-text">You will have natural looking lashes</div>
+                            <div class="price">$150.00</div>
+                            <div>
+                                <a href="" class="btn btn-dark px-5 rounded-0">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="d-flex flex-column align-items-center py-4">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="img/product1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="content d-flex flex-column align-items-center gap-2 pt-3">
+                            <div class="card-title">Classic Eyelashes</div>
+                            <div class="card-text">You will have natural looking lashes</div>
+                            <div class="price">$150.00</div>
+                            <div>
+                                <a href="" class="btn btn-dark px-5 rounded-0">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="img/slider-right.svg" alt="" style="transform: rotate(180deg);">
+            </div>
+            <div class="swiper-button-next">
+                <img src="img/slider-right.svg" alt="">
+            </div>
+        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function createAccount(){
-            document.getElementById("collapseExample1").classList.toggle("d-none")
-            document.getElementById("collapseExample2").classList.toggle("d-none")
-        }
-
-        function profile(){
-            let a = document.getElementById("collapseExample1");
-            a.classList.remove("d-none")
-            document.getElementById("collapseExample2").classList.remove("d-none", "show")
-        }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/homePage.js"></script>
+    <script src="js/header.js"></script>
 </body>
 </html>

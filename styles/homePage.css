@@ -22,3 +22,47 @@
     font-size: 1.5rem;
     padding-top: 2.5rem;
 }
+
+.page-titles{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.75rem;
+    font-weight: 800;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Slider */
+
+.swiper-button-prev::after, .swiper-button-next::after{
+    content: initial !important;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset,25px) !important;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset,25px) !important;
+}
+
+.swiper .card-title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.swiper .card-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.swiper .price, .swiper a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.swiper-slide-next > div {
+    border: 4px solid black;
+}

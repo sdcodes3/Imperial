@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/ContactUs.css">
+    <!-- Bootstrap CDN 5.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+    <!-- Google Fonts Inria Serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet"></head>
+    <!-- Google Fonts Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Google Fonts Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Google Fonts Allura -->
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <!-- Google Fonts Marcellus -->
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+<body>
+    <header class="">
+        <!-- First Nav -->
+        <nav class="navbar navbar-expand-lg text-white top bg-dark">
+            <div class="container-fluid flex-column gap-2 flex-md-row justify-content-center justify-content-md-between">
+                <div>
+                    Free shiping on order over £80.00
+                </div>
+                <div class="icons d-flex ms-md-auto gap-3 align-items-center">
+                    <img src="img/facebook-icon.svg" alt="">
+                    <img src="img/twitter-icon.svg" alt="">
+                    <img src="img/youtube-icon.svg" alt="">
+                    <img src="img/instagram-icon.svg" alt="">
+                    <img src="img/music-icon.svg" alt="">
+                </div>
+            </div>
+        </nav>
+        <!-- Second Nav -->
+        <nav class="navbar navbar-expand-lg bg-white bottom py-0">
+            <div class="container-fluid">
+                <a class="navbar-brand p-0 m-0" href="#">
+                    <img src="img/logo.png" alt="Imperial">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto gap-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active text-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Eyelashes
+                            </a>
+                            <ul class="dropdown-menu border-0">
+                                <li><a class="fw-bold dropdown-item" href="#">View all</a></li>
+                                <li><a class="dropdown-item py-0 pt-2" href="#">Action</a></li>
+                                <li><a class="dropdown-item py-0" href="#">Another action</a></li>
+                                <li><a class="dropdown-item py-0 pb-4" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Glues & Liquids</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Tweezers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active">Brushes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active">Assesories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active">Best Sellers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active">Brushes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active">Brushes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex nav2-icons">
+                    <div>
+                        <button class="btn" type="button" onclick="profile()" style="outline: none; border: none;">
+                            <img src="img/profile-icon.svg" alt="">
+                        </button>
+                    </div>
+                    <div>
+                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="outline: none; border: none;">
+                            <img src="img/search-icon.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="d-flex align-items-center ps-2">
+                        <div class="position-relative">
+                            <img src="img/icon.png" alt="" class="img-fluid">
+                            <div class="badges text-white position-absolute rounded-circle">2</div>
+                        </div>
+                        <div class="small-text">
+                            £20.00
+                        </div>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="pt-5">
+        <!-- Search-->
+        <div class="collapse bg-white" id="collapseExample" style="z-index: 20;">
+            <div class="container-fluid p-5 bg-white position-absolute" style="z-index: 10;">
+                <div>
+                    <input type="email" class="form-control in-box" placeholder="Start Typing">
+                </div>
+                <div class="p-4">
+                    <p class="heading mt-3">Need a little Inspiration?</p>
+                    <div class="row gap-3 gy-3 mt-2">
+                        <button type="button" class="btn mx-auto col-md-2 bt-w">EYELASHES</button>
+                        <button type="button" class="btn mx-auto col-md-2 bt-w">GLUES & LIQUIDS</button>
+                        <button type="button" class="btn mx-auto col-md-2 bt-w">TWEEZERS</button>
+                        <button type="button" class="btn mx-auto col-md-2 bt-w">BRUSHES</button>
+                        <button type="button" class="btn mx-auto col-md-2 bt-w">ASSESORIES</button>
+                        <button type="button" class="btn mx-auto col-md-2 bt-w">BEST SELLERS</button>
+                        <button type="button" class="btn mx-auto col-md-2 bt-w">NEW ARRIVALS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Profile 1 Login -->
+        <button class="btn d-none" type="button" id="profile" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1" style="outline: none; border: none;">
+            <img src="img/profile-icon.svg" alt="">
+        </button>
+        <div class="collapse" id="collapseExample1" style="z-index: 20; background-color: #E7F4FF;">
+            <div class="row col-md-4 h-100 d-flex flex-column justify-content-evenly align-items-center p-4 position-absolute" style="z-index: 10; right: 0; background-color: #E7F4FF;">
+                <div class="d-flex justify-content-between">
+                    <p class="log">LOGIN</p>
+                    <p class="create" onclick="createAccount()" style="cursor: pointer;"><span style="color: black !important;">CREATE ACCOUNT</span></p>
+                </div>
+                <div class="col-12 col-md-8 mt-5">
+                    <input type="email" class="form-control in1" placeholder="Email">
+                    <input type="password" class="form-control mt-4 in1" placeholder="Password">
+                    <a href="ForgotPass.html" class="forgot mt-4 text-decoration-none text-dark"><span style="border-bottom: 1px solid black;">Forgot Password</span></a>
+                </div>
+                <button type="button" class="btn btn-dark mt-3 mx-auto col-md-8">Sign in</button>
+                <div class="col-12  mt-5 d-flex flex-column">
+                    <div class="d-flex">
+                        <div class="col-md-2 d-flex justify-content-center">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="frtxt">By clicking “Continue with Facebook”, you are acknowledging that you have received and read Privacy Policy, our Ad & Cookie Policy and our Terms of Use.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-md-2 d-flex justify-content-center">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="frtxt">Yes! By submitting your e-mail address you agree to receive marketing e-mail communications from Jo Malone London Online. Privacy Policy</p>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-cont mt-5 col-12 col-md-11"><i class="fa fa-facebook-official mx-2" aria-hidden="true"></i>
+                    Continue with Facebook
+                </button>
+            </div>
+        </div>
+
+        <!-- Profile 2 Create Account -->
+        <button class="btn d-none" id="createAccount" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2" style="outline: none; border: none;">
+            <img src="img/profile-icon.svg" alt="">
+        </button>
+        <div class="collapse" id="collapseExample2" style="z-index: 20; background-color: #E7F4FF;">
+            <div class="row col-md-4 d-flex flex-column align-items-center p-4 position-absolute" style="z-index: 10; right: 0; background-color: #E7F4FF;">
+                <div class="d-flex justify-content-between">
+                    <p class="log text-dark" style="cursor: pointer;" onclick="login()">LOGIN</p>
+                    <p class="create"><span style="border-bottom: 1px solid #FF0000;">CREATE ACCOUNT</span></p>
+                </div>
+                <div class="col-12 col-md-8 mt-5">
+                    <input type="text" class="form-control in1" placeholder="First Name">
+                    <input type="text" class="form-control mt-4 in1" placeholder="Last Name">
+                    <input type="email" class="form-control in1 mt-4" placeholder="Email">
+                    <input type="password" class="form-control mt-4 in1" placeholder="Password">
+                </div>
+                <a href="ResetPass.html" class="btn btn-dark mt-5 mx-auto col-md-8 text-decoration-none">Reset Password</a>
+                <div class="col-12  mt-5 d-flex flex-column">
+                    <div class="d-flex  gap-2">
+                        <div class="col-md-2 d-flex justify-content-center">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="frtxt">By clicking “Continue with Facebook”, you are acknowledging that you have received and read Privacy Policy, our Ad & Cookie Policy and our Terms of Use. </p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div class="col-md-2 d-flex justify-content-center">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="frtxt">Yes! By submitting your e-mail address you agree to receive marketing e-mail communications from Jo Malone London Online. Privacy Policy</p>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary mt-5 col-12 col-md-11 "><i class="fa fa-facebook-official mx-2" aria-hidden="true"></i>
+                    Continue with Facebook
+                </button>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="row col-12 m-0 p-0">
+            <div class="col-md-4">
+                <ul class="nav d-flex flex-column nv-text  align-items-sm-center  align-items-md-start">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">My Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link "><span style="font-weight: bold;">Terms & Conditions</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="Privecy.html">Privecy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-8  d-flex flex-column text-md-start text-center gap-3 p-3">
+                <p class="main-txt">Terms & Conditions</p>
+                <div>
+                    <p class="main-txt">IMPERIAL LASH EXTENSIONS - TERMS OF SALES</p>
+                    <p class="sub-txt">Lpsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble it to make a type specimen book. It has</p>
+                </div>
+                <div>
+                    <p class="main-txt">YOUR STATUS</p>
+                    <p class="sub-txt">Lpsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble it to make a type specimen book. It has</p>
+                </div>
+                <div>
+                    <p class="main-txt">OUR STATUS</p>
+                    <p class="sub-txt">Lpsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble it to make a type specimen book. It has</p>
+                </div>
+                <div>
+                    <p class="main-txt">PRODUCT DESCRIPTIONS</p>
+                    <p class="sub-txt">Lpsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble it to make a type specimen book. It has</p>
+                </div>
+                <div>
+                    <p class="main-txt">PAYMENT</p>
+                    <p class="sub-txt">Lpsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble it to make a type specimen book. It has</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
