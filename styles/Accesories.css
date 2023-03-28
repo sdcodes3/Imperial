@@ -66,3 +66,103 @@ main * {
     font-size: 16px;
     padding: 10px 35px;
 }
+
+/* Quick Buy Modal */
+.btn-group {
+    border: 2px solid #000000;
+    font-size: 1rem;
+    border-radius: 0px;
+    color: black !important;
+}
+
+.btn-group1 {
+    background-color: black !important;
+    color: white !important;
+    font-size: 32px;
+    border-radius: 0px;
+    padding: 0.3rem;
+}
+
+.add-bt {
+    background-color: black !important;
+    color: white !important;
+    padding: 6px 50px 6px 50px;
+    border-radius: 0px
+}
+
+.add-bt1 {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 0px;
+    font-size: 1.5rem
+}
+
+.soft {
+    font-size: 4rem;
+    font-weight: bolder;
+    width: max-content;
+}
+
+.rupee {
+    font-size: 3rem;
+    font-weight: 100 !important;
+
+}
+
+.ft-main {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.main-bt {
+    font-size: 24px;
+    padding: 0px 50px 0px 50px;
+    font-family: 'Marcellus', serif;
+    border-radius: 0px !important;
+    background-color: black !important;
+    color: white !important;
+
+}
+
+.main-bt1 {
+    font-size: 24px;
+    font-family: 'Marcellus', serif;
+    border-radius: 0px !important;
+    background-color: black !important;
+    color: white !important;
+
+}
+
+.st-main {
+    font-size: 3rem;
+    font-weight: 100 !important;
+}
+
+@media (max-width: 992px) {
+    .soft {
+        font-size: 1.5rem;
+    }
+
+    .rupee {
+        font-size: 1.5rem
+    }
+
+    .ft-main {
+        font-size: 1.3rem;
+        font-weight: bolder;
+    }
+
+    .st-main {
+        font-size: 1.3rem;
+        font-weight: 100 !important;
+    }
+
+    .main-txt {
+        font-size: 1.5rem !important;
+    }
+}
+
+.modal-header .btn-close {
+    margin: 0px !important;
+}
+/*  */
