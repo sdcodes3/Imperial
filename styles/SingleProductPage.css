@@ -1,0 +1,116 @@
+.brush-img {
+    width: 100%;
+    border: 1px solid black;
+    padding: 2rem;
+}
+
+.txt,
+.txt1 {
+    font-size: 3rem;
+}
+
+.p-font {
+    font-size: 2rem;
+}
+
+.f-font {
+    font-size: 1.3rem;
+}
+
+.bt {
+    border-radius: 0px !important;
+}
+
+.bt1 {
+    border-radius: 0px !important;
+    background-color: #F6F6F6 !important;
+}
+
+.bt:focus {
+    outline: none !important;
+}
+
+.circle {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #F2D8D8;
+}
+
+.add {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.subfont {
+    font-size: 1.5rem;
+    color: #898989
+}
+
+.pagetitle{
+    font-family: 'Marcellus', serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.dds{
+    font-family: 'Marcellus', serif;
+    font-size: 2.25rem;
+}
+
+.dds select{
+    font-size: 1.5rem;
+}
+
+/* Slider Similar Product */
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset,15px) !important;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset,15px) !important;
+}
+
+.swiperSimilar .swiper-slide > div > div.upper{
+    background-color: rgba(121, 186, 252, 0.1);
+}
+
+.swiperSimilar .swiper-slide > div:hover > div.upper{
+    border: 2px solid black;
+    background-color: white;
+}
+
+.swiper .detail,
+.swiper .lower{
+    visibility: hidden;
+}
+
+.swiperSimilar .swiper-slide > div:hover > div.upper div.detail,
+.swiperSimilar .swiper-slide > div:hover > div.lower{
+    visibility: visible;
+}
+
+.lower .title{
+    font-family: 'Marcellus', serif;
+    font-size: 1.25rem;
+}
+
+.lower .subtitle,
+.lower .price{
+    font-family: 'Marcellus', serif;
+    font-size: 0.875rem;
+}
+
+.lower .price{
+    color: #50A4F9;
+}
+
+/* Slider More Images */
+.swiperMoreImg .swiper-slide{
+    background-color: rgba(217, 217, 217, 0.46);
+}
+
+.swiperMoreImg .swiper-slide-next{
+    background-color: #D9D9D9;
+}

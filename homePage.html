@@ -71,16 +71,13 @@
                             <a class="nav-link active">Brushes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active">Assesories</a>
+                            <a class="nav-link active">Accessories</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" data-bs-toggle="collapse" data-bs-target="#bestSeller" aria-expanded="false" aria-controls="bestSeller" >Best Sellers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active">Brushes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active">Brushes</a>
+                            <a class="nav-link active">New Arrivals</a>
                         </li>
                     </ul>
                 </div>
@@ -91,7 +88,7 @@
                         </button>
                     </div>
                     <div>
-                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="outline: none; border: none;">
+                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="outline: none; border: none;" onclick="search()" id="searchIcon">
                             <img src="img/search-icon.svg" alt="">
                         </button>
                     </div>
@@ -370,38 +367,38 @@
 
         <!-- Images - 5 -->
         <section class="py-5">
-            <div class="row m-0 p-0 col-12" style="background-color: #B5CFCC;">
-                <div class=" col-lg-4 col-md-4 p-0">
-                    <div style="position: relative;">
-                        <img src="img/liquid.png" alt="#" style="width: 100%;">
+            <div class="row g-0" style="background-color: #B5CFCC;">
+                <div class="col">
+                    <div class="position-relative">
+                        <img src="img/liquid.png" alt="#" style="min-height: 50% !important; width: 100%; max-width: 100%;">
                         <div>
                             <p class="bottom-right">Glues & Liquid</p>
                         </div>
                     </div>
-                    <div style="position: relative;">
-                        <img src="img/Brush.png" alt="#" style="width: 100%;">
+                    <div class="position-relative" style="border-top: 2px solid #9FC4C4;">
+                        <img src="img/Brush.png" alt="#" style="min-height: 50% !important; width: 100%; max-width: 100%;">
                         <div>
                             <p class="bottom-right">Brushes</p>
                         </div>
                     </div>
                 </div>
-                <div class=" col-lg-4 col-md-4">
-                    <div style="position: relative;">
-                        <img src="img/extension.png" alt="#" style="width: 100%;">
+                <div class="col" style="border: 4px solid black; border-top: none; border-bottom: none;">
+                    <div class="position-relative">
+                        <img src="img/extension.png" alt="#" style="min-height: 50% !important; width: 100%; max-width: 100%;">
                         <div>
                             <p class="bottom-right text-dark" style="border-color: black;">Eyelashes Extension</p>
                         </div>
                     </div>
                 </div>
-                <div class=" col-lg-4 col-md-4 p-0">
-                    <div style="position: relative;">
-                        <img src="img/tweezer.png" alt="#" style="width: 100%;">
+                <div class="col">
+                    <div class="position-relative">
+                        <img src="img/liquid.png" alt="#" style="min-height: 50% !important; width: 100%; max-width: 100%;">
                         <div>
                             <p class="bottom-right">Tweezer</p>
                         </div>
                     </div>
-                    <div style="position: relative;">
-                        <img src="img/accessories.png" alt="#" style="width: 100%;">
+                    <div class="position-relative" style="border-top: 2px solid #9FC4C4;">
+                        <img src="img/Brush.png" alt="#" style="min-height: 50% !important; width: 100%; max-width: 100%;">
                         <div>
                             <p class="bottom-right">Accessories</p>
                         </div>
@@ -412,11 +409,11 @@
 
         <!-- New Arrivals -->
         <section>
-            <div class="border border-dark border-5 d-flex newArrival">
-                <div class="left w-50 py-5">
-                    <img src="img/newArrival.png" alt="" class="img-fluid">
+            <div class="border border-dark border-5 row g-0 newArrival">
+                <div class="left col">
+                    <img src="img/newArrival.png" alt="" class="img-fluid w-100 h-100">
                 </div>
-                <div class="right w-50 d-flex justify-content-center flex-column p-md-5" style="background-color: #E5EDF3;">
+                <div class="right d-flex col justify-content-center flex-column p-md-5" style="background-color: #E5EDF3;">
                     <div class="title">
                         New
                         <br>
@@ -429,6 +426,70 @@
             </div>
         </section>
         
+        <!-- Best Seller -->
+        <section class="mt-5" style="background-color: black;">
+            <div class="title-seller text-white text-center">
+                Best Seller
+            </div>
+            <div class="row g-0 overflow-hidden hovdivs">
+                <div class="col position-relative" style="border-right: 7px solid black;">
+                    <img src="img/bestsell1.png" alt="" class="img-fluid w-100">
+                    <div class="w-100 position-absolute bsText d-flex flex-column align-items-center py-2 pt-0" style="background-color: #A6C5D8;">
+                        <div class="bg-white row g-0 w-100 align-items-center hover-display">
+                            <div class="col-3 d-flex justify-content-center">
+                                <img src="img/share.svg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col d-flex justify-content-center gap-4 border-start border-end border-2">
+                                <img src="img/eye.svg" alt="">
+                                <div style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 2.5rem;">Quick View</div>
+                            </div>
+                            <div class="col-3 d-flex justify-content-center">
+                                <img src="img/cart.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="pt-2">Glues & Liquids</div>
+                        <div>£15.00</div>
+                    </div>
+                </div>
+                <div class="col d-flex flex-column">
+                    <div class="position-relative w-100">
+                        <img src="img/bestsell2.png" alt="" class="img-fluid w-100" style="border-bottom: 7px solid;">
+                        <div class="position-absolute bsText w-100" style="bottom: 15%;">
+                            <div class="bg-white row g-0 w-100 align-items-center hover-display">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="img/share.svg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col d-flex justify-content-center gap-4 border-start border-end border-2">
+                                    <img src="img/eye.svg" alt="">
+                                    <div style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 2.5rem;">Quick View</div>
+                                </div>
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="img/cart.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative w-100">
+                        <img src="img/bestsell2.png" alt="" class="img-fluid w-100">
+                        <div class="position-absolute bsText w-100" style="bottom: 15%;">
+                            <div class="bg-white row g-0 w-100 align-items-center hover-display">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="img/share.svg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col d-flex justify-content-center gap-4 border-start border-end border-2">
+                                    <img src="img/eye.svg" alt="">
+                                    <div style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 2.5rem;">Quick View</div>
+                                </div>
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="img/cart.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Our Products -->
         <section>
             <div class="page-titles">

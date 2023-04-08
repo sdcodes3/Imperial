@@ -36,6 +36,29 @@
     border-bottom: 3px solid white;
 }
 
+/* Best Seller */
+.title-seller{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.75rem;
+    font-weight: bold;
+}
+
+.bsText{
+    bottom: 0;
+    font-family: 'Marcellus', serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hover-display{
+    display: none !important;
+}
+
+.hovdivs div.position-relative:hover > div > div.hover-display{
+    display: flex !important;
+    cursor: pointer;
+}
+
 /* New Arrivals */
 
 .newArrival .right{
@@ -65,10 +88,6 @@
 }
 
 /* Slider */
-
-.swiper-button-prev::after, .swiper-button-next::after{
-    content: initial !important;
-}
 
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
     left: var(--swiper-navigation-sides-offset,25px) !important;

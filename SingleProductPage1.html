@@ -7,7 +7,7 @@
     <title>Home Page</title>
     <!-- Link CSS -->
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/Accesories.css">
+    <link rel="stylesheet" href="styles/SingleProductPage.css">
     <link rel="stylesheet" href="styles/footer.css">
     <!-- Bootstrap CDN 5.2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
@@ -109,8 +109,8 @@
         </nav>
     </header>
 
-    <main class="mb-5 position-relative">
-        <!-- <section class="overflow-hidden position-relative"> -->
+    <main class="mb-5">
+        <section class="">
             <!-- Best Sellers-->
             <div class="collapse bg-white border-top" id="bestSeller" style="z-index: 20;">
                 <div class="container-fluid px-5 p-1 bg-white position-absolute" style="z-index: 10;">
@@ -327,276 +327,351 @@
                     </button>
                 </div>
             </div>
-        <!-- </section> -->
+        </section>
 
-        <!-- Accesories -->
+        <!-- Product View -->
         <section>
-            <div class="px-5 py-3">
-                <div class="navigation">Home &#x2022; <span style="color: #0000007A;"> Accessories </span></div>
-                <div class="page-heading">ACCESSORIES</div>
-            </div>
-            <div class="row col-12 g-0">
-                <div class="card col-md-6 col-lg-4  d-flex flex-column align-items-center container" style="border: none; ">
-                    <img src="img/img1.png" class="card-img-top" alt="..." style="width: 279px;height:279px">
-                    <div class="middle1 d-flex align-items-center">
-                        <img src="img/redstar.png" alt="#" style="width:2rem">
-                        <span class="ps-2 badge-label">Sale</span>
+            <div class="container-fluid d-flex justify-content-center align-items-center flex-column">
+                <div class="row col-12">
+                    <div class="col-md-6">
+                        <img src="img/img1.png" alt="Noimage" class="brush-img">
                     </div>
-                    <div class="middle">
-                        <div class="text">
-                            <a href="" class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                Quick Buy
-                            </a>
+                    <div class="col-md-5">
+                        <p class="txt m-0">Silicone Soft Brushes </p>
+                        <p class="m-0 txt1">£ 50:00</p>
+                        <div class="row g-0 dds">
+                            <div class="col-4 d-flex justify-content-between">
+                                <span> Curl </span>
+                                :
+                            </div>
+                            <div class="col ps-3">
+                                <select>
+                                    <option value="">C</option>
+                                    <option value="">C</option>
+                                    <option value="D">DD</option>
+                                    <option value="">A</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-    
-                    <div class="card-body ">
-                        <h5 class="card-title ">Product name
-                        </h5>
-                        <div>
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
+                        <div class="row g-0 dds">
+                            <div class="col-4 d-flex justify-content-between">
+                                <span> Thickness </span>
+                                :
+                            </div>
+                            <div class="col ps-3">
+                                <select>
+                                    <option value="">0.03</option>
+                                    <option value="">C</option>
+                                    <option value="D">DD</option>
+                                    <option value="">A</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row g-0 dds">
+                            <div class="col-4 d-flex justify-content-between">
+                                <span> Length </span>
+                                :
+                            </div>
+                            <div class="col ps-3">
+                                <select class="w-100">
+                                    <option value="">6mm</option>
+                                    <option value="">C</option>
+                                    <option value="D">DD</option>
+                                    <option value="">A</option>
+                                </select>
+                            </div>
                         </div>
                         <div>
-                            <p style="font-size: 48px;">£ 139.00</p>
+                            <p class="p-font">Product Description</p>
+                            <p>Lpsum has been the industry's standard dummy text ever since the
+                                1500s, when an unknown printer took a galley of type and scramble
+                                it to make a type specimen book. It has</p>
+                            <p class="p-font">Product Details</p>
+                            <p class="p-font">Reviews</p>
+                            <p class="f-font">Filter Reviews</p>
+                        </div>
+                        <div>
+                            <input type="email" class="form-control" placeholder="Search Reviews" style="border:1px solid black;border-radius:0px">
+                        </div>
+                        <div class="mt-3">
+                            <button class="btn btn-dark bt">Quality</button>
+                            <button class="btn bt1 mx-2">Price</button>
+                            <button class="btn bt1 mx-2">Length</button>
+                            <button class="btn bt1 mx-2">Color</button>
                         </div>
                     </div>
                 </div>
-                <div class="card col-md-6 col-lg-4 d-flex flex-column align-items-center container" style="border: none; ">
-                    <img src="img/img2.png" class="card-img-top" alt="..." style="width: 279px;height:279px">
-                    <div class="middle1 d-flex align-items-center bg-danger text-white badge-label rounded-circle p-0 p-3 sale">
-                        Sale
-                    </div>
-                    <div class="middle">
-                        <div class="text">
-                            <a href="" class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                Quick Buy
-                            </a>
+                <!-- After Image -->
+                <div class="row col-12">
+                    <div class="col-md-6">
+                        <div class="container px-3 mt-4">
+                            <div class="swiper swiperMoreImg">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column align-items-center py-2 pb-0">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <img src="img/img59.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="detail bg-dark w-100 text-white text-center py-1">Quick View</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column align-items-center py-2 pb-0">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <img src="img/img59.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="detail bg-dark w-100 text-white text-center py-1">Quick View</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column align-items-center py-2 pb-0">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <img src="img/img59.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="detail bg-dark w-100 text-white text-center py-1">Quick View</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column align-items-center py-2 pb-0">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <img src="img/img59.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="detail bg-dark w-100 text-white text-center py-1">Quick View</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column align-items-center py-2 pb-0">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <img src="img/img59.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="detail bg-dark w-100 text-white text-center py-1">Quick View</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column align-items-center py-2 pb-0">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <img src="img/img59.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="detail bg-dark w-100 text-white text-center py-1">Quick View</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column align-items-center py-2 pb-0">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <img src="img/img59.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="detail bg-dark w-100 text-white text-center py-1">Quick View</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column align-items-center py-2 pb-0">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <img src="img/img59.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="detail bg-dark w-100 text-white text-center py-1">Quick View</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column align-items-center py-2 pb-0">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <img src="img/img59.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="detail bg-dark w-100 text-white text-center py-1">Quick View</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <img src="img/slider-right-nav.svg" alt="" style="transform: rotate(180deg);">
+                                </div>
+                                <div class="swiper-button-next">
+                                    <img src="img/slider-right-nav.svg" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-body ">
-                        <h5 class="card-title ">Product name
-                        </h5>
-                        <div>
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
+                    <div class="col-md-6">
+                        <div class="d-flex gap-3 justidy-content-center">
+                            <div class="circle"><span class="d-flex justify-content-center"
+                                    style="font-size: 2rem;">S</span>
+                            </div>
+                            <div>
+                                <p class="add ">Sonia, Mumbai</p>
+                                <img src="img/star.png" width="20px" alt="">
+                                <img src="img/star.png" width="20px" alt="">
+                                <img src="img/star.png" width="20px" alt="">
+                                <img src="img/star.png" width="20px" alt="">
+                                <img src="img/star.png" width="20px" alt="">
+                            </div>
                         </div>
-                        <div>
-                            <p style="font-size: 48px;">£ 139.00</p>
+                        <div class="mt-4 subfont">
+                            <p>Skin Type: Normal</p>
+                            <p>Complexion Family: 2:00 Honey</p>
+                            <p>Age: 35-44</p>
+                            <p> High quality product! Impressed!
+                                Review by Shamere C. on 2 Jan 2023review stating High quality
+                                product! Impressed!
+                                High quality product! Impressed!</p>
                         </div>
                     </div>
                 </div>
-                <div class="card col-md-6 col-lg-4 d-flex flex-column align-items-center container" style="border: none; ">
-                    <img src="img/img3.png" class="card-img-top" alt="..." style="width: 279px;height:279px">
-                    <div class="middle">
-                        <div class="text">
-                            <a href="" class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                Quick Buy
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-body ">
-                        <h5 class="card-title ">Product name
-                        </h5>
-                        <div>
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                        </div>
-                        <div>
-                            <p style="font-size: 48px;">£ 139.00</p>
-                        </div>
-                    </div>
+
+                <!-- Similar Product Slider -->
+                <div class="pagetitle text-start w-100 py-3">
+                    Similar Product
                 </div>
-                <div class="card col-md-6  col-lg-4 d-flex flex-column align-items-center container" style="border: none; ">
-                    <img src="img/immg4.png" class="card-img-top" alt="..." style="width: 279px;height:279px">
-                    <div class="middle">
-                        <div class="text">
-                            <a href="" class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                Quick Buy
-                            </a>
+                <div class="container-fluid p-0 m-0">
+                    <div class="swiper swiperSimilar">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="upper d-flex flex-column align-items-center py-2 pb-0">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img src="img/img59.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="detail bg-dark w-100 text-white text-center py-1">Quick View</div>
+                                    </div>
+                                    <div class="lower pt-2">
+                                        <div class="title">Lash Shampoo</div>
+                                        <div class="subtitle">You will have beautiful brows</div>
+                                        <div class="price">$ 150.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="upper d-flex flex-column align-items-center py-2 pb-0">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img src="img/img59.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="detail bg-dark w-100 text-white text-center py-1">Quick View</div>
+                                    </div>
+                                    <div class="lower pt-2">
+                                        <div class="title">Lash Shampoo</div>
+                                        <div class="subtitle">You will have beautiful brows</div>
+                                        <div class="price">$ 150.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="upper d-flex flex-column align-items-center py-2 pb-0">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img src="img/img59.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="detail bg-dark w-100 text-white text-center py-1">Quick View</div>
+                                    </div>
+                                    <div class="lower pt-2">
+                                        <div class="title">Lash Shampoo</div>
+                                        <div class="subtitle">You will have beautiful brows</div>
+                                        <div class="price">$ 150.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="upper d-flex flex-column align-items-center py-2 pb-0">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img src="img/img59.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="detail bg-dark w-100 text-white text-center py-1">Quick View</div>
+                                    </div>
+                                    <div class="lower pt-2">
+                                        <div class="title">Lash Shampoo</div>
+                                        <div class="subtitle">You will have beautiful brows</div>
+                                        <div class="price">$ 150.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="upper d-flex flex-column align-items-center py-2 pb-0">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img src="img/img59.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="detail bg-dark w-100 text-white text-center py-1">Quick View</div>
+                                    </div>
+                                    <div class="lower pt-2">
+                                        <div class="title">Lash Shampoo</div>
+                                        <div class="subtitle">You will have beautiful brows</div>
+                                        <div class="price">$ 150.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="upper d-flex flex-column align-items-center py-2 pb-0">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img src="img/img59.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="detail bg-dark w-100 text-white text-center py-1">Quick View</div>
+                                    </div>
+                                    <div class="lower pt-2">
+                                        <div class="title">Lash Shampoo</div>
+                                        <div class="subtitle">You will have beautiful brows</div>
+                                        <div class="price">$ 150.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="upper d-flex flex-column align-items-center py-2 pb-0">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img src="img/img59.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="detail bg-dark w-100 text-white text-center py-1">Quick View</div>
+                                    </div>
+                                    <div class="lower pt-2">
+                                        <div class="title">Lash Shampoo</div>
+                                        <div class="subtitle">You will have beautiful brows</div>
+                                        <div class="price">$ 150.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="upper d-flex flex-column align-items-center py-2 pb-0">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img src="img/img59.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="detail bg-dark w-100 text-white text-center py-1">Quick View</div>
+                                    </div>
+                                    <div class="lower pt-2">
+                                        <div class="title">Lash Shampoo</div>
+                                        <div class="subtitle">You will have beautiful brows</div>
+                                        <div class="price">$ 150.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="upper d-flex flex-column align-items-center py-2 pb-0">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img src="img/img59.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="detail bg-dark w-100 text-white text-center py-1">Quick View</div>
+                                    </div>
+                                    <div class="lower pt-2">
+                                        <div class="title">Lash Shampoo</div>
+                                        <div class="subtitle">You will have beautiful brows</div>
+                                        <div class="price">$ 150.00</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-body ">
-                        <h5 class="card-title ">Product name
-                        </h5>
-                        <div>
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
+                        <div class="swiper-button-prev">
+                            <img src="img/slider-right-nav.svg" alt="" style="transform: rotate(180deg);">
                         </div>
-                        <div>
-                            <p style="font-size: 48px;">£ 139.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-md-6 col-lg-4 d-flex flex-column align-items-center container" style="border: none; ">
-                    <img src="img/img5.png" class="card-img-top" alt="..." style="width: 279px;height:279px">
-                    <div class="middle">
-                        <div class="text">
-                            <a href="" class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                Quick Buy
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-body ">
-                        <h5 class="card-title ">Product name
-                        </h5>
-                        <div>
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                        </div>
-                        <div>
-                            <p style="font-size: 48px;">£ 139.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-md-6 col-lg-4 d-flex flex-column align-items-center container" style="border: none; ">
-                    <img src="img/img6.png" class="card-img-top" alt="..." style="width: 279px;height:279px">
-                    <div class="middle">
-                        <div class="text">
-                            <a href="" class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                Quick Buy
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-body ">
-                        <h5 class="card-title ">Product name
-                        </h5>
-                        <div>
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                            <img src="img/Star.png" alt="" style="width:45px;height:45px">
-                        </div>
-                        <div>
-                            <p style="font-size: 48px;">£ 139.00</p>
+                        <div class="swiper-button-next">
+                            <img src="img/slider-right-nav.svg" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <!-- <footer class="pt-5 text-white">
-        <div class="p-5 d-flex justify-content-end">
-            <div class="px-4 py-2 d-flex" style="border: 2px solid #D9D9D9; width: fit-content;">
-                <input type="text" class="border-0 bg-transparent" id="emailFooter" placeholder="Email Address" style="outline: none;">
-                <img src="img/footer-email.svg" alt="" class="ps-2">
-            </div>
-        </div>
-        <div class="row g-0 border-top py-5">
-            <div class="col d-flex flex-column align-items-center gap-3">
-                <div class="icon d-flex align-items-center justify-content-center">
-                    <img src="img/footer-call.svg" alt="" class="img-fluid">
-                </div>
-                <div class="text">
-                    <a href=""></a>
-                class="text-decoration-none text-white" primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" 
-                </button    
-                    +91 8367836572
-                </div>
-            </div>
-            <div class="col d-flex flex-column align-items-center gap-3">
-                <div class="icon d-flex align-items-center justify-content-center">
-                    <img src="img/footer-location.svg" alt="" class="img-fluid">
-                </div>
-                <div class="text">
-                    <a href=""></a>
-                class="text-decoration-none text-white" primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" 
-                </button    
-                    Your location here
-                </div>
-            </div>
-            <div class="col d-flex flex-column align-items-center gap-3">
-                <div class="icon d-flex align-items-center justify-content-center">
-                    <img src="img/footer-mail.svg" alt="" class="img-fluid">
-                </div>
-                <div class="text">
-                    <a href=""></a>
-                class="text-decoration-none text-white" primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" 
-                </button    
-                    youremail@gmail.com
-                </div>
-            </div>
-        </div>
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-3 mt-5 copyright px-5" style="background-color: #303030;">
-            <div>
-                Copyright © 2022. Imperiallash. All Rights Reserved.
-            </div>
-            <div class="d-flex gap-3">
-                <a href="">Privacy Policy</a>
-                <a href="">FAQ</a>
-                <a href="">T & C</a>
-            </div>
-        </div>
-    </footer> -->
-
-    <section class="quickBuyModal">
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content" style="border-radius: 0;">
-                    <div class="modal-header d-flex justify-content-end " style="border-bottom: 0;padding:0px">
-                        <div style="background-color: black;padding:5px">
-                            <button type="button" class="btn-close btn-dark btn-close-white" data-bs-dismiss="modal"
-                                aria-label="Close" aria-label="Close" style=" border-radius:0;"></button>
-                        </div>
-                    </div>
-                    <div class="modal-body w-100 pb-5">
-                        <div class="row col-12 p-4">
-                            <div class="col-md-5 d-flex justify-content-center align-items-center">
-                                <img src="img/makeup.png" alt="" style="width: 100%;height:100%;border:1px solid black">
-                            </div>
-
-                            <div class="col-md-7">
-                                <p class="ft-main">Soft Makeup Brushess</p>
-                                <p class="st-main">£
-                                    234</p>
-
-                                <div>
-                                    <p style="font-size: 2rem;" class="main-txt">Quantity :</p>
-                                    <div class="d-flex ">
-                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                            <button type="button" class="btn ">-</button>
-                                            <button type="button" class="btn ">1</button>
-                                            <button type="button" class="btn ">+</button>
-                                        </div>
-                                        <div><button class="btn main-bt ms-3">Add
-                                                to Bag</button></div>
-                                    </div>
-                                </div>
-                                <p class="mt-3" style="font-size: 20px;">Lpsum has been the industry's standard
-                                    dummy
-                                    text ever since the
-                                    1500s, when an unknown printer took a galley of type and scramble
-                                    it to make a type specimen book. It has</p>
-                                <div
-                                    class="btn-group1 d-flex text-center align-items-center justify-content-center mt-3">
-                                    View all Details </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/SingleProductPage.js"></script>
     <script src="js/header.js"></script>
 </body>
 </html>

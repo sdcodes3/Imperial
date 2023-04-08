@@ -69,16 +69,13 @@
                             <a class="nav-link active">Brushes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active">Assesories</a>
+                            <a class="nav-link active">Accessories</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active">Best Sellers</a>
+                            <a class="nav-link active" data-bs-toggle="collapse" data-bs-target="#bestSeller" aria-expanded="false" aria-controls="bestSeller" >Best Sellers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active">Brushes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active">Brushes</a>
+                            <a class="nav-link active">New Arrivals</a>
                         </li>
                     </ul>
                 </div>
@@ -89,7 +86,7 @@
                         </button>
                     </div>
                     <div>
-                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="outline: none; border: none;">
+                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="outline: none; border: none;" onclick="search()" id="searchIcon">
                             <img src="img/search-icon.svg" alt="">
                         </button>
                     </div>
@@ -109,7 +106,7 @@
             </div>
         </nav>
     </header>
-    <main class="pt-5">
+    <main class="position-relative">
         <!-- Search-->
         <div class="collapse bg-white" id="collapseExample" style="z-index: 20;">
             <div class="container-fluid p-5 bg-white position-absolute" style="z-index: 10;">
@@ -131,89 +128,91 @@
             </div>
         </div>
         
-        <!-- Profile 1 Login -->
-        <button class="btn d-none" type="button" id="profile" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1" style="outline: none; border: none;">
-            <img src="img/profile-icon.svg" alt="">
-        </button>
-        <div class="collapse" id="collapseExample1" style="z-index: 20; background-color: #E7F4FF;">
-            <div class="row col-md-4 h-100 d-flex flex-column justify-content-evenly align-items-center p-4 position-absolute" style="z-index: 10; right: 0; background-color: #E7F4FF;">
-                <div class="d-flex justify-content-between">
-                    <p class="log">LOGIN</p>
-                    <p class="create" onclick="createAccount()" style="cursor: pointer;"><span style="color: black !important;">CREATE ACCOUNT</span></p>
-                </div>
-                <div class="col-12 col-md-8 mt-5">
-                    <input type="email" class="form-control in1" placeholder="Email">
-                    <input type="password" class="form-control mt-4 in1" placeholder="Password">
-                    <a href="ForgotPass.html" class="forgot mt-4 text-decoration-none text-dark"><span style="border-bottom: 1px solid black;">Forgot Password</span></a>
-                </div>
-                <button type="button" class="btn btn-dark mt-3 mx-auto col-md-8">Sign in</button>
-                <div class="col-12  mt-5 d-flex flex-column">
-                    <div class="d-flex">
-                        <div class="col-md-2 d-flex justify-content-center">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <section class="position-relative">
+            <!-- Profile 1 Login -->
+            <button class="btn d-none" type="button" id="profile" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1" style="outline: none; border: none;">
+                <img src="img/profile-icon.svg" alt="">
+            </button>
+            <div class="collapse" id="collapseExample1" style="z-index: 20; background-color: #E7F4FF;">
+                <div class="row col-md-4 h-auto d-flex flex-column justify-content-evenly align-items-center p-4 position-absolute" style="z-index: 10; right: 0; background-color: #E7F4FF;">
+                    <div class="d-flex justify-content-between">
+                        <p class="log">LOGIN</p>
+                        <p class="create" onclick="createAccount()" style="cursor: pointer;"><span style="color: black !important;">CREATE ACCOUNT</span></p>
+                    </div>
+                    <div class="col-12 col-md-8 mt-5">
+                        <input type="email" class="form-control in1" placeholder="Email">
+                        <input type="password" class="form-control mt-4 in1" placeholder="Password">
+                        <a href="ForgotPass.html" class="forgot mt-4 text-decoration-none text-dark"><span style="border-bottom: 1px solid black;">Forgot Password</span></a>
+                    </div>
+                    <button type="button" class="btn btn-dark mt-3 mx-auto col-md-8">Sign in</button>
+                    <div class="col-12  mt-5 d-flex flex-column">
+                        <div class="d-flex">
+                            <div class="col-md-2 d-flex justify-content-center">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                            <div class="col-md-8">
+                                <p class="frtxt">By clicking “Continue with Facebook”, you are acknowledging that you have received and read Privacy Policy, our Ad & Cookie Policy and our Terms of Use.</p>
+                            </div>
                         </div>
-                        <div class="col-md-8">
-                            <p class="frtxt">By clicking “Continue with Facebook”, you are acknowledging that you have received and read Privacy Policy, our Ad & Cookie Policy and our Terms of Use.</p>
+                        <div class="d-flex">
+                            <div class="col-md-2 d-flex justify-content-center">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                            <div class="col-md-8">
+                                <p class="frtxt">Yes! By submitting your e-mail address you agree to receive marketing e-mail communications from Jo Malone London Online. Privacy Policy</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="d-flex">
-                        <div class="col-md-2 d-flex justify-content-center">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        </div>
-                        <div class="col-md-8">
-                            <p class="frtxt">Yes! By submitting your e-mail address you agree to receive marketing e-mail communications from Jo Malone London Online. Privacy Policy</p>
-                        </div>
-                    </div>
+                    <button type="button" class="btn btn-primary btn-cont mt-5 col-12 col-md-11"><i class="fa fa-facebook-official mx-2" aria-hidden="true"></i>
+                        Continue with Facebook
+                    </button>
                 </div>
-                <button type="button" class="btn btn-primary btn-cont mt-5 col-12 col-md-11"><i class="fa fa-facebook-official mx-2" aria-hidden="true"></i>
-                    Continue with Facebook
-                </button>
             </div>
-        </div>
 
-        <!-- Profile 2 Create Account -->
-        <button class="btn d-none" id="createAccount" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2" style="outline: none; border: none;">
-            <img src="img/profile-icon.svg" alt="">
-        </button>
-        <div class="collapse" id="collapseExample2" style="z-index: 20; background-color: #E7F4FF;">
-            <div class="row col-md-4 d-flex flex-column align-items-center p-4 position-absolute" style="z-index: 10; right: 0; background-color: #E7F4FF;">
-                <div class="d-flex justify-content-between">
-                    <p class="log text-dark" style="cursor: pointer;" onclick="login()">LOGIN</p>
-                    <p class="create"><span style="border-bottom: 1px solid #FF0000;">CREATE ACCOUNT</span></p>
-                </div>
-                <div class="col-12 col-md-8 mt-5">
-                    <input type="text" class="form-control in1" placeholder="First Name">
-                    <input type="text" class="form-control mt-4 in1" placeholder="Last Name">
-                    <input type="email" class="form-control in1 mt-4" placeholder="Email">
-                    <input type="password" class="form-control mt-4 in1" placeholder="Password">
-                </div>
-                <a href="ResetPass.html" class="btn btn-dark mt-5 mx-auto col-md-8 text-decoration-none">Reset Password</a>
-                <div class="col-12  mt-5 d-flex flex-column">
-                    <div class="d-flex  gap-2">
-                        <div class="col-md-2 d-flex justify-content-center">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <!-- Profile 2 Create Account -->
+            <button class="btn d-none" id="createAccount" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2" style="outline: none; border: none;">
+                <img src="img/profile-icon.svg" alt="">
+            </button>
+            <div class="collapse" id="collapseExample2" style="z-index: 20; background-color: #E7F4FF;">
+                <div class="row col-md-4 d-flex flex-column align-items-center p-4 position-absolute" style="z-index: 10; right: 0; background-color: #E7F4FF;">
+                    <div class="d-flex justify-content-between">
+                        <p class="log text-dark" style="cursor: pointer;" onclick="login()">LOGIN</p>
+                        <p class="create"><span style="border-bottom: 1px solid #FF0000;">CREATE ACCOUNT</span></p>
+                    </div>
+                    <div class="col-12 col-md-8 mt-5">
+                        <input type="text" class="form-control in1" placeholder="First Name">
+                        <input type="text" class="form-control mt-4 in1" placeholder="Last Name">
+                        <input type="email" class="form-control in1 mt-4" placeholder="Email">
+                        <input type="password" class="form-control mt-4 in1" placeholder="Password">
+                    </div>
+                    <a href="ResetPass.html" class="btn btn-dark mt-5 mx-auto col-md-8 text-decoration-none">Reset Password</a>
+                    <div class="col-12  mt-5 d-flex flex-column">
+                        <div class="d-flex  gap-2">
+                            <div class="col-md-2 d-flex justify-content-center">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                            <div class="col-md-8">
+                                <p class="frtxt">By clicking “Continue with Facebook”, you are acknowledging that you have received and read Privacy Policy, our Ad & Cookie Policy and our Terms of Use. </p>
+                            </div>
                         </div>
-                        <div class="col-md-8">
-                            <p class="frtxt">By clicking “Continue with Facebook”, you are acknowledging that you have received and read Privacy Policy, our Ad & Cookie Policy and our Terms of Use. </p>
+                        <div class="d-flex gap-2">
+                            <div class="col-md-2 d-flex justify-content-center">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                            <div class="col-md-8">
+                                <p class="frtxt">Yes! By submitting your e-mail address you agree to receive marketing e-mail communications from Jo Malone London Online. Privacy Policy</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="d-flex gap-2">
-                        <div class="col-md-2 d-flex justify-content-center">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        </div>
-                        <div class="col-md-8">
-                            <p class="frtxt">Yes! By submitting your e-mail address you agree to receive marketing e-mail communications from Jo Malone London Online. Privacy Policy</p>
-                        </div>
-                    </div>
+                    <button type="button" class="btn btn-primary mt-5 col-12 col-md-11 "><i class="fa fa-facebook-official mx-2" aria-hidden="true"></i>
+                        Continue with Facebook
+                    </button>
                 </div>
-                <button type="button" class="btn btn-primary mt-5 col-12 col-md-11 "><i class="fa fa-facebook-official mx-2" aria-hidden="true"></i>
-                    Continue with Facebook
-                </button>
             </div>
-        </div>
+        </section>
 
         <!-- Main content -->
-        <div class="row col-12">
+        <div class="row col-12 pt-5">
             <div class="col-md-4">
                 <ul class="nav d-flex flex-column nv-text align-items-sm-center align-items-md-start">
                     <li class="nav-item">
@@ -241,10 +240,6 @@
             </div>
             <div class="col-md-8 d-flex flex-column text-md-start text-center gap-3 p-3">
                 <p class="main-txt">Contact Us</p>
-                <div>
-                    <p class="main-txt1 mb-0">Chat Live With Our Team</p>
-                    <p class="mt-0">Chat Now <br> For a quick response to most questions 7 days a week.</p>
-                </div>
                 <div class="mt-3">
                     <p class="m-0">WhatsApp</p>
                     <a href="+44 20 3936 4869" style="color: black !important;">+44 20 3936 4869</a>
@@ -255,10 +250,6 @@
                     <a href="08082810229" style="color: black !important;">08082810229</a>
                 </div>
                 <div class="mt-3">
-                    <p class="m-0">Gift Cards/E-card Enquiries</p>
-                    <a href="0808 178 2067" style="color: black !important;">0808 178 2067</a>
-                </div>
-                <div class="mt-3">
                     <p class="m-0">Head Office</p>
                     <a href="0370 034 6700" style="color: black !important;">0370 034 6700</a>
                 </div>
@@ -266,5 +257,7 @@
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/header.js"></script>
 </body>
 </html>

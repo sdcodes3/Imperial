@@ -13,6 +13,12 @@ function login(){
 }
 // When Profile is clicked
 function profile(){
+    if(document.getElementById("collapseExample").classList.contains("show")){
+        document.getElementById("searchIcon").click();
+    }
+    if(document.getElementById("collapseExample").classList.contains("show")){
+        document.getElementById("searchIcon").click();
+    }
     if(type == "acc"){
         document.getElementById("createAccount").click();
     }
@@ -20,6 +26,13 @@ function profile(){
         document.getElementById("profile").click();
     }
     type = "none"
+}
+
+// When search icon is clicked
+function search(){
+    if(document.getElementById("collapseExample1").classList.contains("show") || document.getElementById("collapseExample2").classList.contains("show")){
+        profile();
+    }
 }
 
 const swiper1 = new Swiper('.swiperNav', {
