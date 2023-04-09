@@ -21,3 +21,10 @@ main .sub-txt {
     font-size: 36px;
     line-height: 45px;
 }
+
+.sub-txt1 {
+    font-family: 'Marcellus', serif;
+    font-size: 2.2rem;
+    color: black !important;
+    margin-top: 1.5rem;
+}
