@@ -1,0 +1,31 @@
+.cart{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cart .headings{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.cart .offcanvas{
+    width: 600px !important;
+    max-width: 100%;
+}
+
+.cart .cardTitles{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.cart .cardSubTitles{
+    font-size: 1.25rem;
+}
+
+.cart .numbers div{
+    font-size: 1.25rem;
+}
+
+.cart .fbt{
+    font-size: 2rem;
+    font-weight: bold;
+}
