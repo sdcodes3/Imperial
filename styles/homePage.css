@@ -1,7 +1,7 @@
 .carousel-caption{
     right: initial !important;
     left: initial !important;
-    top: 40%;
+    /* top: 40%; */
 }
 
 .c-1{
@@ -21,6 +21,13 @@
     font-weight: 600;
     font-size: 1.5rem;
     padding-top: 2.5rem;
+}
+
+/* Navbar Icons */
+
+.nav2-icons img{
+    width: 2.8rem;
+    height: 3.3rem;
 }
 
 /* Images 5 */
@@ -106,6 +113,7 @@
 .swiperMain .card-text{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .swiperMain .price, .swiperMain a{
